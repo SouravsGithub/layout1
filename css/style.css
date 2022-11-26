@@ -1,20 +1,20 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,19 +22,125 @@
 /*******************************************/
 
 body {
-
+  font-family: "Poppins", sans-serif;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.main {
+  display: flex;
+}
+.main > * {
+}
+.main > header {
+  flex: 1;
+  margin-left: 2rem;
+}
+.main > header + section {
+  flex: 4;
+  margin: 1rem 0;
+  padding: 0 1rem;
 }
 
+.main > section + section {
+  flex: 2;
+  margin-right: 2rem;
+}
+header {
+  margin-top: 1.5rem;
+}
+nav * {
+  display: block;
+}
+.logo {
+  width: 35%;
+}
+.small-logo {
+  width: 5%;
+}
+.gold-text {
+  text-decoration: none;
+  margin: 1rem 0;
+  color: rgb(255, 200, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.login {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.search,
+.nav-links > * {
+  text-decoration: none;
+  color: rgb(175, 175, 175);
+  font-size: 1.4rem;
+}
+.search {
+  margin-bottom: 1.2rem;
+}
+.nav-links > * {
+  margin-bottom: 0.8rem;
+}
+.nav-links > *:hover {
+  color: rgb(68, 195, 68);
+}
+.login:hover {
+  color: rgb(54, 160, 54);
+}
+.nav-links > *:first-child:hover {
+  color: gold;
+}
+header + section h1 {
+  margin-top: 0;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin-bottom: 2%;
+}
+header + section span a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-weight: bolder;
+}
+header + section span a:hover {
+  color: rgb(68, 195, 68);
+}
+.main-img {
+  width: 95%;
+  margin-top: 1%;
+}
+.article {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding-bottom: 3%;
+}
+.article:last-child {
+  border: none;
+}
+.article h5 {
+  margin-bottom: 0;
+}
+.article h5 a {
+  color: rgb(109, 221, 109);
+}
+.article h3 {
+  font-size: 1.5rem;
+  margin-top: 2%;
+}
+.article a {
+  text-decoration: none;
+  color: black;
+}
+.article span a {
+  font-weight: bold;
+}
+.article span a:hover {
+  color: rgb(26, 165, 26);
+  font-weight: bold;
+}
 footer {
-
 }
 
 /******************************************

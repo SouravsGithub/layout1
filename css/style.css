@@ -140,6 +140,57 @@ header + section span a:hover {
   color: rgb(26, 165, 26);
   font-weight: bold;
 }
+.main + h2 {
+  margin-left: 16.5%;
+}
+
+.other-articles {
+  width: 80%;
+  margin-left: 16.5%;
+  display: flex;
+  padding: 2% 0;
+  margin-right: 2.5%;
+}
+.other-articles > p {
+  padding: 0 3%;
+  margin: 0;
+  color: gray;
+  line-height: 1.5;
+}
+.other-articles p {
+  color: gray;
+  line-height: 1.5;
+}
+.other-articles > * {
+  flex: 1;
+}
+.other-articles h5 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: top;
+  margin-left: 1%;
+  color: rgb(220, 191, 24);
+}
+.other-articles h3 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+.mini-logo {
+  width: 13%;
+}
+.smaller-width {
+  height: 80%;
+}
+.other-articles span a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.other-articles span a:hover {
+  color: rgb(26, 165, 26);
+}
 footer {
 }
 
